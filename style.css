@@ -16,7 +16,10 @@ body{
 
 }
 .custom-hr{
-    border-top: 3px solid #000;
+    border-top: 3px solid var(--black);
+}
+.custom-hr-white{
+    border-top: 3px solid var(--white);
 }
 .btn{
     font-size: 20px;
@@ -74,4 +77,97 @@ h3{
     font-size: 20px;
     color: var(--black);
 }
+.demofin .row{
+    background-image: url(assets/gradient-bg_fin-demo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.demofin input{
+    font-size: 20px;
 
+}
+span{
+    font-size: 32px;
+    color: var(--black);
+}
+.features-section{
+    background-color: var(--black);
+}
+.features-section ul {
+    list-style: none;
+    padding-left: 0;
+    
+  }
+  .features-section ul li{
+    font-size: 18px;
+    color: var(--white);
+  }
+  
+  .features-section ul li:before {
+    content: '✓';
+    padding-right: 15px;
+  }
+  .lastsection .row{
+    background-image: url(assets/Gradient_Background_CTA.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  footer ul{
+    list-style: none;
+    color: var(--black);
+    padding-left: 0px;
+
+  }
+.custom-prev-arrow{
+    position: absolute;
+    padding: 3px 15px;
+    z-index: 1;
+    font-size: 20px;
+    color: var(--black);
+  top: 40%;
+ left: -5px;
+    border-radius: 50px;
+    border: 1px solid var(--black);
+    display: inline-block;
+   
+}
+.custom-next-arrow{
+    position: absolute;
+    padding: 3px 15px;
+    z-index: 1;
+    font-size: 20px;
+    color: var(--black);
+  top: 40%;
+  right: -5px;
+    border-radius: 50px;
+    border: 1px solid var(--black);
+    display: inline-block;
+    
+}
+.multiple-items .slidercontent{
+    background-color:#ffdac1;
+    margin: 0 10px;
+    border-radius: 20px;
+}
+.multiple-items p{
+    font-size: 24px;
+    color: var(--black);
+}
+.multiple-items b{
+    background-color: var(--white);
+}
+.multiple-items span{
+    font-size: 18px;
+    color: var(--black);
+}
+ul{
+    padding-left: 0;
+}
+.multiple-items h5{
+    font-size: 24px;
+    font-weight: bolder;
+    color: var(--black);
+
+}

@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!---font awesome icon link-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
-   <!---style. css link-->
+   <!--slick slider--->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <!---style. css link-->
     <link rel="stylesheet" href="style.css">
     <title>Fin AI bot</title>
 </head>
 <body>
-    <header>
+    <header class="sticky-top bg-white">
 
         <nav class="navbar navbar-expand-lg navbar-light wrapper">
             <div class="container-fluid">
@@ -103,11 +105,12 @@
     </div>
     <div class="my-5 custom-hr">
   </div>  
+  </div>
   <!---simple setup-->
   <div class="wrapper my-5">
     <h1>SIMPLE SETUP. <br>
         HIGHLY CONFIGURABLE.</h1>
-        <div class="row my-5">
+        <div class="row justify-content-around my-5">
             <div class="col col-lg-6">
                 <img src="assets/fin_setup_1.webp" class="img-fluid" alt="">
             </div>
@@ -183,11 +186,243 @@
             <img src="assets/fin_workflows.webp" alt="" class="img-fluid">
   </div>
 
+  <!---demo fin form-->
+  <div class="wrapper demofin my-5">
+    <div class="row rounded-3 p-5 align-items-center">
+        <div class="col col-lg-7">
+            <h3 class="text-light">Demo Fin now with your own support content</h3>
+            <p class="text-light">Enter your help center URL to create a custom, shareable Fin demo. 
+                Fin will ingest your content and then use it to answer questions automatically.</p>
+        </div>
+        <div class="col col-lg-5">
+            <form>
+                <div class="mb-3">
+                  <input type="email" placeholder="Your work email" class="form-control py-3" id="exampleInputEmail1" aria-describedby="emailHelp">
+                 </div>
+                <div class="mb-3">
+               <input type="password"  placeholder="Your help center home page link" class="form-control py-3" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-dark w-100 m-0">Create demo</button>
+              </form>
+        </div>
+    </div>
+    <p class="fs-6 text-center text-secondary my-3">By sharing your URL, you are confirming that you have the necessary rights to 
+        share the content at this URL. <br>
+        By submitting your email, you agree to receive marketing emails related to the demo.</p>
+
+  </div>
+  <!---99 resolution--->
+  <div class="wrapper text-center">
+  <h1 class="mb-5">99¢ PER RESOLUTION</h1>
+    <span class="lh-lg fw-bold my-5">Pay when Fin achieves the outcome you and your customers 
+        care  <br>about most—resolved conversations.</span><br>
+    <span class="lh-lg fw-bold my-5">You can also take control of your spend by setting up notifications 
+        or <br>stop Fin delivering AI answers to customers when a defined resolution limit is reached.</span><br>
+        <button type="button" class="btn btn-outline-dark w-50 my-4">View Pricing <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+          </svg></button>
+          <div class="my-5 custom-hr"></div>
+    </div>
+
+  
+ 
+<!---testimonial-->
+<div class="testimonial wrapper">
+    <h1>WHY OUR CUSTOMERS LOVE FIN</h1>
+    <ul class="multiple-items">
+        <li><div class="p-5 slidercontent">
+            <img src="assets/quote.svg" alt="quote" class="mb-5">
+            <p class="my-3">The numbers speak for themselves. <b>We're seeing a 50% resolution rate with Fin,</b>
+                which is pretty amazing!”</p>
+                <div class="my-5 custom-hr"></div>
+                <h5>Ben Peak</h5>
+                <span>Director of Technical Support,</span>
+        </div>
+    </li>
+    <li><div class="p-5 slidercontent">
+        <img src="assets/quote.svg" alt="quote" class="mb-5">
+        <p class="my-3">The numbers speak for themselves. <b>We're seeing a 50% resolution rate with Fin,</b>
+            which is pretty amazing!”</p>
+            <div class="my-5 custom-hr"></div>
+            <h5>Ben Peak</h5>
+            <span>Director of Technical Support,</span>
+    </div>
+</li>
+<li><div class="p-5 slidercontent">
+    <img src="assets/quote.svg" alt="quote" class="mb-5">
+    <p class="my-3">The numbers speak for themselves. <b>We're seeing a 50% resolution rate with Fin,</b>
+        which is pretty amazing!”</p>
+        <div class="my-5 custom-hr"></div>
+        <h5>Ben Peak</h5>
+        <span>Director of Technical Support,</span>
+</div>
+</li>
+<li><div class="p-5 slidercontent">
+    <img src="assets/quote.svg" alt="quote" class="mb-5">
+    <p class="my-3">The numbers speak for themselves. <b>We're seeing a 50% resolution rate with Fin,</b>
+        which is pretty amazing!”</p>
+        <div class="my-5 custom-hr"></div>
+        <h5>Ben Peak</h5>
+        <span>Director of Technical Support,</span>
+</div>
+</li>
+<li><div class="p-5 slidercontent">
+    <img src="assets/quote.svg" alt="quote" class="mb-5">
+    <p class="my-3">The numbers speak for themselves. <b>We're seeing a 50% resolution rate with Fin,</b>
+        which is pretty amazing!”</p>
+        <div class="my-5 custom-hr"></div>
+        <h5>Ben Peak</h5>
+        <span>Director of Technical Support,</span>
+</div>
+</li>
+    </ul>
+
+</div>
+
+
+  <!---feautures section-->
+  <div class="features-section py-5">
+    <div class="wrapper">
+    <h1 class="text-light">ALL THE FEATURES YOU NEED AND MORE</h1>
+    
+    <div class="my-5 custom-hr-white"></div>
+    <div class="row">
+        <div class="col col-lg-4">
+            <h4 class="text-light fw-bold mb-3">by your support content</h4>
+            <ul class="text-light lh-lg fw-bold">
+                <li>Intercom articles</li>
+                <li>Zendesk help center</li>
+                <li>Public URLs</li>
+                <li>PDFs</li>
+                <li>Snippets</li>
+                <li>Conversational snippets</li>
+                <li>Historical conversation data <span class="badge bg-light text-dark">Comming soon</span></li>
+                <li>Multi-source answers</li>
+                <li>Automated content sync</li>
+
+            </ul>
+        </div>
+        <div class="col col-lg-4">
+            <h4 class="text-light fw-bold mb-3">Intelligent controls</h4>
+            <ul class="text-light lh-lg fw-bold">
+                <li>Preview Fin before setting live</li>
+                <li>Fin custom Answers</li>
+                <li>Configure multiple Fin AI chatbots</li>
+                <li>Rules and audience targeting</li>
+                <li>Content targeting</li>
+                <li>Usage limits notifications</li>
+                <li>Handoff to support teams</li>
+                <li>Handoff to other bots</li>
+                <li>Handoff to Zendesk or Freshdesk</li>
+
+            </ul>
+        </div>
+        <div class="col col-lg-4">
+            <h4 class="text-light fw-bold mb-3">Conversational by design</h4>
+            <ul class="text-light lh-lg fw-bold">
+                <li>Powered by OpenAI including GPT-4</li>
+                <li>Holds complete conversations</li>
+                <li>Asks clarifying questions</li>
+                <li>Multilingual</li>
+                <li>Snippets</li>
+             
+            </ul>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col col-lg-4">
+            <h4 class="text-light fw-bold mb-3">Built for scale</h4>
+            <ul class="text-light lh-lg fw-bold">
+                <li>Web, mobile, and app ready</li>
+                <li>Intercom messenger</li>
+                <li>WhatsApp</li>
+                <li>SMS</li>
+                <li>Facebook messenger</li>
+                <li>Instagram messenger</li>
+                <li>Email <span class="badge bg-light text-dark">Comming soon</span></li>
+                </ul>
+        </div>
+        <div class="col col-lg-4">
+            <h4 class="text-light fw-bold mb-3">Measurement and reporting</h4>
+            <ul class="text-light lh-lg fw-bold">
+                <li>Fin conversation monitoring</li>
+                <li>Fin CSAT</li>
+                <li>Usage metrics</li>
+                <li>Performance/ROI metrics</li>
+                <li>Custom reporting</li>
+                <li>Content-level metrics</li>
+              
+            </ul>
+        </div>
+        <div class="col col-lg-4">
+            <h4 class="text-light fw-bold mb-3">Customizable</h4>
+            <ul class="text-light lh-lg fw-bold">
+                <li>Rename Fin</li>
+                <li>Personalize Fin in messenger</li>
+                <li>Customize Fin icon</li>
+               
+             
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+  </div>
+  <!---last section-->
+  <div class="wrapper lastsection my-5">
+    <div class="row rounded-3 p-5 align-items-center">
+        <div class="col col-lg-7">
+            <h3 class="text-dark">Try Fin with your own <br> support content now</h3>
+        </div>
+        <div class="col col-lg-5">
+            <button type="button" class="btn btn-primary">Free Trail <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+              </svg></button>
+            <button type="button" class="btn btn-dark">Demo fin now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+              </svg></button>
+           
+        </div>
+    </div>
+      </div>
+      <!---footer-->
+      <footer class="wrapper py-3">
+        <div class="row align-items-baseline">
+            <div class="col col-lg-1">
+                <img src="assets/fin-logo.png" alt="footerlogo" class="w-50">
+            </div>
+            <div class="col col-lg-4">
+                <ul class="d-flex justify-content-between"> 
+                    <li class="text-dark">Terms</li>
+                    <li>Privacy</li>
+                    <li>Security</li>
+                    <li>Status</li>    
+
+                </ul>
+            </div>
+
+        </div>
+      </footer>
+
 
  
  <!---bootsrap cdn-->   
  
  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<!----slider cdn-->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script type="text/javascript">
+    $('.multiple-items').slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  prevArrow: '<button type="button" class="slick-prev custom-prev-arrow">‹</button>',
+        nextArrow: '<button type="button" class="slick-next custom-next-arrow">›</button>'
+});
+</script>
 </body>
 </html>
