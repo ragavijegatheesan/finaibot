@@ -173,7 +173,7 @@ h4{
 }
 .herochatbox{
     border-radius: 20px;
-    background: linear-gradient(-45deg, var(--lightgreen), var(--lightpink), var(--whitegreen));
+    background: linear-gradient(-45deg, var(--lightgreen), var(--lightpink), var(--whitegreen),#0fff0a52);
     background-position: center;
     background-size: 400% 400%;
     overflow-x: hidden;
