@@ -45,7 +45,7 @@ body{
         flex-direction: column;
         gap: 13px;
         height: 40vh;
-        top: 85px;
+        top: 55px;
         text-align: center;
         background-color: var(--white);
         width: 100%;
@@ -60,7 +60,7 @@ body{
         color: var(--black);
         position: absolute;
         right: 20px;
-        top: 25px;
+        top: 0;
         font-size: 36px;
         cursor: pointer;
     }
@@ -378,6 +378,10 @@ ul{
 
 /*---media query for tablet*---*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .hero-section h3{
+        margin-top: 10px;
+
+    }
 h3{
     font-size: 48px;
 }
@@ -385,18 +389,20 @@ h3{
 }
 /*---media query for mobile veiw---*/
 @media only screen and (max-width: 767px) {
-    header{
-        padding: 0px 15px;
-    }
-    .logo{
-        width: 60%;
+   
+    .logo img{
+        width: 40%;
     }
     .hero-section{
-       margin-top: 0px !important;
+       margin-top: 1px !important;
        margin-bottom: 0px!important;
+    }
+    .hero-section h3{
+        margin-top: 20px;
     }
     h3{
         font-size: 24px;
-        line-height: 2rem;
+        line-height: 2rem!important;
+       
     }
 }
