@@ -12,6 +12,9 @@
     padding: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
 :root{
     --primary:#DBFF52;
     --green:#0FFF0A;
