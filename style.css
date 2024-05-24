@@ -21,6 +21,7 @@ body{
     --lightgreen:#C0FDFF;
     --whitegreen:#C8E7FF;
     --black:#000;
+    --grayblack:#141414;
     --white:#fff;
     --lightpink:#ebffc5;
 }
@@ -165,7 +166,7 @@ p{
 }
 h5{
     font-size: 24px;
-    color: var(--black);
+    color: var(--grayblack);
     font-family: 'VC Nudge Trial', sans-serif;
     letter-spacing: 1px;
 
@@ -232,20 +233,20 @@ margin-top: -15px;
 }
 .undefined p{
     font-size: 18px;
-    color: var(--black);
+    color: var(--grayblack);
     font-weight: 500;
     font-family: 'VC Nudge Trial Normal', sans-serif;
 
 }
 .workflow p{
     font-size: 18px;
-    color: var(--black);
+    color: var(--grayblack);
     font-weight: 500;
     font-family: 'VC Nudge Trial Normal', sans-serif;
 }
 .conversation p{
     font-size: 18px;
-    color: var(--black);
+    color: var(--grayblack);
     font-weight: 500;font-family: 'VC Nudge Trial Normal', sans-serif;
 }
 .conversation button{
@@ -266,7 +267,7 @@ margin-top: -15px;
 /*---clickform--*/
 .clickform p{
     font-size: 18px;
-    color: var(--black);
+    color: var(--grayblack);
     font-weight: 500;font-family: 'VC Nudge Trial Normal', sans-serif;
 }
 .clickform h4{
@@ -385,6 +386,9 @@ ul{
 
 /*---media query for tablet*---*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    html,body{
+        overflow-x: hidden;
+    }
     
     .hero-section h3{
         margin-top: 10px;
@@ -401,8 +405,33 @@ h3{
 .herochatbox .row{
     flex-direction: column;
 }
+
+
 .herochatbox .row .herocol{
     width: 100%;
+}
+.herochatbox .row .herocol h6{
+    margin-bottom: 15px!important;
+
+}
+.herochatbox .row .herocol h6::before{
+    content: "\2192";
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
+.herocol2{
+    order: 1;
+}
+.herocol1{
+    order: 2;
+}
+.herocol3{
+    order: 3;
+}
+.herochatbox .custom-hr{
+    display: none;
 }
 .custom-hr{
     margin: 15px auto;
@@ -430,13 +459,18 @@ h3{
     text-align: center;
     margin: 0px;
 }
-.playandbug .row{
-    flex-direction: column;
-}
-.playandbug .plcol{
-    width: 100%;
-    padding: 0px 20px;
-}
+.playandbug .row {
+    padding: 0px 25px;
+    text-align: left;
+        flex-direction: row; /* Ensure columns display side by side */
+    }
+    .playandbug .plcol {
+        
+        width: 50%; /* Each column occupies 50% of the row width */
+    }
+    .playandbug .plcol h6{
+        margin-top: 5px;
+    }
 .playandbug img{
     margin-bottom: 10px;
     width: 90%;
@@ -446,23 +480,18 @@ h3{
     text-align: center;
 }
 .undefined .row{
-    flex-direction: column;
+    flex-direction: row;
+    padding: 0px 25px;
 }
 .undefined .ucol{
-    width: 100%;
+    width: 50%;
+    text-align: left;
     padding: 0px 25px;
-    position: relative; /* Needed for the pseudo-element to position correctly */
     padding-top: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.ucol::before {
-    content: '';
-    position: absolute;
-    top: 7px; /* Adjust this value to position the border */
-    left: 50%;
-    width: 80%; /* Set the width of the border */
-    transform: translateX(-50%); /* Center the border */
-    border-top: 1px solid #a19595; /* Define the border style */}
+
 .workflow{
     text-align: center;
     padding: 0px 25px;
@@ -497,9 +526,9 @@ form input{
     max-width: 50%!important;
     margin-top: 15px;
 }
-
-
 }
+
+
 /*---media query for mobile veiw---*/
 @media only screen and (max-width: 767px) {
     html, body {
