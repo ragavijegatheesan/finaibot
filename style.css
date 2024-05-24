@@ -382,6 +382,10 @@ ul{
         margin-top: 10px;
 
     }
+    .herochatbox .row{
+        text-align: center;
+        padding: 3rem 0rem;
+    }
 h3{
     font-size: 48px;
 }
@@ -398,11 +402,27 @@ h3{
        margin-bottom: 0px!important;
     }
     .hero-section h3{
-        margin-top: 20px;
+        margin-top: 35px;
+        line-height: 2.5rem !important;
     }
     h3{
         font-size: 24px;
         line-height: 2rem!important;
        
+    }
+    h6{
+        font-size: 18px;
+    }
+    .custom-hr{
+        margin: 15px auto;
+        width: 90%;
+    }
+    .herochatbox .row{
+        text-align: center;
+        padding: 3rem 0rem;
+    }
+    .herochatbox .row img{
+        width: 75%;
+
     }
 }
