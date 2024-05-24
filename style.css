@@ -393,6 +393,11 @@ h3{
 }
 /*---media query for mobile veiw---*/
 @media only screen and (max-width: 767px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;}
    
     .logo img{
         width: 40%;
