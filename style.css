@@ -541,12 +541,14 @@ form input{
             top: 0;
         }
         header {
+            padding: 0px!important;
             top: 0;
             z-index: 1030; /* Ensure it stays on top of other elements */
         }
         
    
     .logo img{
+        margin-left: 25px;
         width: 45%;
     }
     .hero-section{
@@ -574,9 +576,36 @@ form input{
         margin: 15px auto;
         width: 90%;
     }
+    .herochatbox .custom-hr{
+        display: none;
+    }
     .herochatbox .row{
+        flex-direction: column;
         text-align: center;
-        padding: 3rem 0rem;
+        padding-bottom: 2rem!important;
+    }
+    
+    
+    .herochatbox .row .herocol{
+        width: 100%;
+    }
+    .herocol2{
+        order: 1;
+    }
+    .herocol1{
+        order: 2;
+    }
+    .herocol3{
+        order: 3;
+    }
+    .herochatbox .row .herocol h6{
+        margin-bottom: 15px!important;
+    
+    }
+    .herochatbox .row .herocol h6::before{
+        content: "\2192";
+        margin-right: 10px;
+        font-size: 18px;
     }
     .herochatbox .row img{
         width: 75%;
