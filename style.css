@@ -35,6 +35,22 @@ body{
 .navicon {
     display: none;
 }
+a{
+    text-decoration: none;
+}
+.fixed-ratio-resize{
+    max-width: 100%;
+    height: 100vh;
+    max-height: 600px;
+    text-align: center;
+    height: 100vh;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 3rem;
+}
+.herocol{
+    text-align: center;
+}
 
 @media only screen and (max-width: 900px) {
  
@@ -147,10 +163,12 @@ body{
     margin: 0 10px;
 }
 h3{
-    font-size: 96px;
+    font-size: 84px;
     font-weight: bold;
     color: var(--black);
-    font-family: 'VC Nudge Trial', sans-serif;;
+     transform: scaleX(0.75)!important;
+    
+       font-family: 'VC Nudge Trial', sans-serif;;
 } 
 h6{
     font-size: 24px;
@@ -173,18 +191,27 @@ h5{
 
 }
 h4{
-    font-size: 50px;
+    font-size: 55px;
     color: var(--black);
+    text-transform: uppercase;
     font-family: 'VC Nudge Trial', sans-serif;
 }
 .hero-section{
     overflow-x: hidden;
-   
     
+    
+}
+.hero-section h3{
+    transform: scaleX(0.75) !important;
+    margin-top: 5rem!important;  
+}
+
+video{
+    margin-bottom: 40px;
 }
 .herochatbox{
     border-radius: 20px;
-    background: linear-gradient(-45deg, var(--lightgreen), var(--lightpink), var(--whitegreen),#0fff0a52);
+    background: linear-gradient(-45deg, var(--lightgreen), var(--lightpink), var(--whitegreen),#0FFF0A);
     background-position: center;
     background-size: 400% 400%;
     overflow-x: hidden;
@@ -216,20 +243,32 @@ width: 9%;
 margin-top: -15px;
 
 }   
+.ai1 h4{
+    transform: scaleX(0.75);
+    margin-left: -85px !important;
+}
 
 .ai1{
    margin-top: 5rem;
    margin-bottom: 5rem;
 }
 .ai1 p{
+    line-height: 2.3rem;
     font-weight: 500;
+    font-size: 24px;
 }
 .playandbug p{
     font-weight: 500;
+}
+.playandbug h3{
+    margin-left: -170px;
 }
 .playandbug p{
     font-size: 18px;
     font-family: 'VC Nudge Trial Normal', sans-serif;
+}
+.undefined h3{
+    margin-left: -170px;
 }
 .undefined p{
     font-size: 18px;
@@ -237,6 +276,15 @@ margin-top: -15px;
     font-weight: 500;
     font-family: 'VC Nudge Trial Normal', sans-serif;
 
+}
+.undefined img{
+    border-radius: 15px;
+}
+.workflow img{
+    border-radius: 15px;
+}
+.workflow h3{
+    margin-left: -170px;
 }
 .workflow p{
     font-size: 18px;
@@ -272,56 +320,9 @@ margin-top: -15px;
 }
 .clickform h4{
     font-family: 'VC Nudge Trial Normal', sans-serif;
-    font-weight: 600;
+    font-weight:700;
+    text-transform: capitalize;
 }
-form{
-    position: relative;
-}
-form button{
-    width: 100%;
-    justify-content: center;
-    margin-top: 10px;
-}
-form input{
-    background-color: var(--white);
-    font-size: 18px;
-    padding: 13px 15px;
-    border-radius: 10px;
-    border: none;
-    width: 100%;
-margin: 10px 0px;
-}
-.pagelink{
-    position: relative;
-}
-.tooltipimg{
-    position: absolute;
-    right: 11px;
-    top: 28%;
-    background-color: var(--white);
-    border-radius: 15px;
-    padding: 3px 13px;
-    border: 1px solid var(--black);
-
-}
-.tooltiptext{
-    visibility: hidden;
-  width: 120px;
-  font-size: 16px;
-  color:var(--black);
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  left:-109px;
-  top: 0;
-  z-index: 1;
-}
-.tooltipimg:hover .tooltiptext {
-    visibility: visible;
-  }
 
 
 .clickform .row{
@@ -344,7 +345,9 @@ margin: 10px 0px;
 	}
 }
 
-
+.features-section h3{
+    margin-left: -170px;
+}
 .features-section{
     background-color: var(--black);
 }
@@ -389,10 +392,26 @@ ul{
     html,body{
         overflow-x: hidden;
     }
-    
+    .features-section h3{
+        margin-left: 0px!important;
+    }
+    .workflow h3{
+        margin-left: 0px!important;
+    }.undefined h3{
+        margin-left: 0px!important;
+    }.playandbug h3{
+        margin-left: 0px!important;
+    }
+    .ai1 h4{
+        margin-left: 0px!important;
+    }
+   
     .hero-section h3{
-        margin-top: 10px;
+        margin-top: 2rem!important;
 
+    }
+    .ai1 h4{
+        margin-left: 0px!important;
     }
    
     .herochatbox .row{
@@ -400,7 +419,7 @@ ul{
         padding: 3rem 0rem;
     }
 h3{
-    font-size: 76px;
+    font-size: 64px;
 }
 .herochatbox .row{
     flex-direction: column;
@@ -545,7 +564,31 @@ form input{
             top: 0;
             z-index: 1030; /* Ensure it stays on top of other elements */
         }
-        
+       
+        .features-section h3{
+            margin-left: 0px!important;
+            text-align: center;
+        }
+        .workflow h3{
+            transform: none!important;
+            margin-left: 0px!important;
+        }.undefined h3{
+            transform: none!important;
+            margin-left: 0px!important;
+        }.playandbug h3{
+           transform: none!important;
+           margin-left: 0px !important;
+        }
+       
+        .ai1 h4{
+            
+           
+            transform: none;
+            line-height: 3rem;
+            margin-left: 0px!important;
+        }
+       
+     
    
     .logo img{
         margin-left: 25px;
@@ -556,25 +599,29 @@ form input{
        margin-bottom: 0px!important;
     }
     .hero-section h3{
-        margin-top: 35px;
-        line-height: 2.5rem !important;
+        font-size: 58px;
+        margin-top: 2rem!important;
+        line-height: 4rem !important;
+    }
+    .fixed-ratio-resize{
+        max-height: 470px;
     }
     h3{
-        font-size: 24px;
-        line-height: 2rem!important;
-       
+        font-size: 58px;
+        line-height: 4rem !important;
+              
     }
     h6{
-        font-size: 18px;
+        font-size: 24px;
     }
     h4{
         line-height: 2rem;
-        font-size: 20px;
+        font-size: 36px;
     }
 
     .custom-hr{
         margin: 15px auto;
-        width: 90%;
+        width: 100%;
     }
     .herochatbox .custom-hr{
         display: none;
@@ -612,18 +659,40 @@ form input{
 
     }
     .meetfin p{
-        font-size: 16px;
+        font-size: 20px;
         padding: 0px 10px;
         font-weight: 500;
         line-height: 2rem;
     }
+    .meetfin h3{
+        font-size: 46px;
+    }
     .meetfinheading img {
-        margin-left: 10px;
+        margin-left: -25px;
+        width: 14%;
+    margin-top: -20px;
     }
-    .ai1 h4{
-        margin-bottom: 10px!important;
+    .meetbutton{
+        flex-direction: column;
+        gap: 13px;
+        padding: 0px 15px;
+        
     }
+    .meetbutton .button{
+        width: 100%;
+        justify-content: center;
+        margin: 0px!important;
+        
+
+    }
+   
+    
     .ai1{
+
+        padding: 0px 20px;
+    }
+    .ai1 img{
+      
         text-align: center;
     }
     .social-running{
@@ -634,46 +703,42 @@ form input{
         display: none;
     }
     .playandbug{
-        text-align: center;
+        padding: 0px 20px;
         margin: 0px;
     }
+    .playandbug .plcol{
+        text-align: center;
+    }
     .playandbug img{
+      
         margin-bottom: 10px;
         width: 90%;
 
     }
     .playandbug p{
         font-size: 16px;
+        font-weight: 600;
+    }
+    .playandbug .custom-hr{
+        width: 100%;
     }
     .undefined{
-        text-align: center;
+        padding: 0px 20px;
+      
     }
     .undefined h5{
-        margin: 10px 0px!important;
+        margin: 20px 0px!important;
     }
     .undefined p{
         font-size: 16px;
+        font-weight: 600;
     }
-    .undefined .ucol {
-        position: relative; /* Needed for the pseudo-element to position correctly */
-        padding-top: 2rem;
-    }
-    
-    .ucol::before {
-        content: '';
-        position: absolute;
-        top: 7px; /* Adjust this value to position the border */
-        left: 50%;
-        width: 80%; /* Set the width of the border */
-        transform: translateX(-50%); /* Center the border */
-        border-top: 1px solid #a19595; /* Define the border style */}
+   
         .workflow{
-            text-align: center;
-            padding: 0px 10px;
+        overflow-x: hidden!important;
+            padding: 0px 20px;
         }
-        .workflow h3{
-            font-size: 20px;
-        }
+        
         .workflow p{
             font-size: 16px;
         }
