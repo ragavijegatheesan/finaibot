@@ -263,6 +263,9 @@ margin-top: -15px;
 .playandbug h3{
     margin-left: -170px;
 }
+.playandbug img{
+    border-radius: 15px;
+}
 .playandbug p{
     font-size: 18px;
     font-family: 'VC Nudge Trial Normal', sans-serif;
